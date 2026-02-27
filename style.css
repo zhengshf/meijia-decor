@@ -1,0 +1,359 @@
+:root {
+
+    --primary-color: #4a6fa5;
+
+    --secondary-color: #ff7e5f;
+
+    --light-color: #f8f9fa;
+
+    --dark-color: #343a40;
+
+}
+
+
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    font-family: 'Noto Sans SC', sans-serif;
+
+    line-height: 1.6;
+
+    color: var(--dark-color);
+
+}
+
+
+
+.container {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 0 20px;
+
+}
+
+
+
+/* 导航栏 */
+
+.navbar {
+
+    background: white;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+    position: fixed;
+
+    width: 100%;
+
+    top: 0;
+
+    z-index: 1000;
+
+}
+
+
+
+.navbar .container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 1rem 20px;
+
+}
+
+
+
+.logo {
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+
+    color: var(--primary-color);
+
+    text-decoration: none;
+
+}
+
+
+
+.nav-links a {
+
+    margin-left: 2rem;
+
+    text-decoration: none;
+
+    color: var(--dark-color);
+
+    font-weight: 500;
+
+}
+
+
+
+.nav-links a:hover {
+
+    color: var(--primary-color);
+
+}
+
+
+
+/* 英雄区域 */
+
+.hero {
+
+    background: linear-gradient(rgba(74, 111, 165, 0.8), rgba(74, 111, 165, 0.9)),
+
+                url('https://images.unsplash.com/photo-1615529328331-f8917597711f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 10rem 1rem;
+
+    margin-top: 60px;
+
+}
+
+
+
+.hero h1 {
+
+    font-size: 3rem;
+
+    margin-bottom: 1rem;
+
+}
+
+
+
+.highlight {
+
+    color: var(--secondary-color);
+
+}
+
+
+
+.btn {
+
+    display: inline-block;
+
+    background: var(--secondary-color);
+
+    color: white;
+
+    padding: 0.8rem 2rem;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    margin-top: 1rem;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+
+
+/* 服务区域 */
+
+.services {
+
+    padding: 5rem 1rem;
+
+    background: var(--light-color);
+
+}
+
+
+
+.services h2 {
+
+    text-align: center;
+
+    margin-bottom: 3rem;
+
+    font-size: 2.5rem;
+
+}
+
+
+
+.services-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 2rem;
+
+}
+
+
+
+.service-card {
+
+    background: white;
+
+    padding: 2rem;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+
+.service-card i {
+
+    font-size: 3rem;
+
+    color: var(--primary-color);
+
+    margin-bottom: 1rem;
+
+}
+
+
+
+/* 预约表单 */
+
+.contact {
+
+    padding: 5rem 1rem;
+
+}
+
+
+
+.contact h2 {
+
+    text-align: center;
+
+    margin-bottom: 3rem;
+
+}
+
+
+
+#appointment-form {
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+}
+
+
+
+#appointment-form input,
+
+#appointment-form textarea {
+
+    padding: 1rem;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+    font-family: inherit;
+
+}
+
+
+
+#appointment-form textarea {
+
+    height: 150px;
+
+    resize: vertical;
+
+}
+
+
+
+/* 页脚 */
+
+footer {
+
+    background: var(--dark-color);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 2rem 1rem;
+
+}
+
+
+
+/* 响应式设计 */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+
+        font-size: 2rem;
+
+    }
+
+    
+
+    .nav-links {
+
+        display: none;
+
+    }
+
+    
+
+    .services-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+文件3: script.js (交互脚本)
